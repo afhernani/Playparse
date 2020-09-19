@@ -77,7 +77,12 @@ class Application(tk.Frame):
         #self.label['image'] = self.render
         self.master.update_idletasks()
 
-root = tk.Tk()
-app = Application(master=root)
-app.mainloop()
+
+if __name__ == '__main__':
+    root = tk.Tk()
+    # root.iconbitmap('bily.ico')
+    # root.tk.call('wm', 'iconphoto', root._w, tk.PhotoImage(file='48pCrystal.png'))
+    root.iconphoto(True, tk.PhotoImage(file='48pCrystal.png'))
+    app = Application(master=root)
+    app.mainloop()
 
