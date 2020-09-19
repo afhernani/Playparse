@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Playparse
+GenericName=lunch playparse from WDatos
+Path=/media/hernani/WDatos/dragdrop/playparse
+Exec=python3 playparse.py
+Icon=/media/hernani/WDatos/dragdrop/playparse/logo.png
+NoDisplay=false
+Terminal=true
+Categories=Utility;FileTools;
+StartupNotify=true
