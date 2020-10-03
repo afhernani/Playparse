@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+# -*- coding:UTF-8 -*-
 import tkinter as tk
 from PIL import Image, ImageTk
 # from dragmanager import DragManager
