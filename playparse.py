@@ -62,7 +62,7 @@ class Application(tk.Frame):
     extvd = ('.mp4', '.flv', '.avi', '.mpg', '.mkv', 
             '.webm', '.ts', '.mov', '.MP4', '.FLV',
             '.MPG', '.AVI', '.MKV', 'WEBM', '.MOV',
-            '.TS')
+            '.TS', '.wmv', '.WMV')
     extim = ('.jpeg', '.jpg', '.png', '.gif')
 
     def update_image(self, url, *args):
