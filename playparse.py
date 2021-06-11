@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding:UTF-8 -*-
+# -*- coding: utf-8 -*-
+
 import tkinter as tk
 from PIL import Image, ImageTk
 # from dragmanager import DragManager
@@ -36,7 +37,7 @@ class Application(tk.Frame):
             return action
         
         def drop(action, actions, type, win, X, Y, x, y, data):
-            datos = str(data)
+            datos = str(data).encode('utf-8')
             print(datos)
             r = ''
             if '{' in datos:
