@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -*- coding: latin-1 -*-
 
 import tkinter as tk
 from PIL import Image, ImageTk
@@ -37,7 +37,7 @@ class Application(tk.Frame):
             return action
         
         def drop(action, actions, type, win, X, Y, x, y, data):
-            datos = str(data).encode('utf-8')
+            datos = str(data).encode('iso-8859-1').decode('utf-8')
             print(datos)
             r = ''
             if '{' in datos:
@@ -48,8 +48,7 @@ class Application(tk.Frame):
             else:
                 r = datos.split()[0]
             self.update_image(url=r)
-                
-                
+                            
         dnd.bindtarget(self.label, 'text/uri-list', '<Drag>', drag, 
                         ('%A', '%a', '%T', '%W', '%X', '%Y', '%x', '%y', '%D'))
         dnd.bindtarget(self.label, 'text/uri-list', '<DragEnter>', drag_enter, 
